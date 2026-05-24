@@ -17,3 +17,8 @@ class ViewController: UIViewController {
 
 }
 
+
+@MainActor
+final class FooView: UIView {
+
+}
