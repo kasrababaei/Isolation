@@ -19,6 +19,9 @@
 		602E725D2FCCC63E0011373C /* IsolationNSLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72542FCCC63E0011373C /* IsolationNSLock.framework */; };
 		602E72672FCCC63E0011373C /* IsolationNSLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72542FCCC63E0011373C /* IsolationNSLock.framework */; };
 		602E72682FCCC63E0011373C /* IsolationNSLock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72542FCCC63E0011373C /* IsolationNSLock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		602E72812FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72782FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework */; };
+		602E728B2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72782FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework */; };
+		602E728C2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72782FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,27 @@
 			remoteGlobalIDString = 602E72532FCCC63E0011373C;
 			remoteInfo = IsolationNSLock;
 		};
+		602E72822FCCC7DE0011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 602E72772FCCC7DE0011373C;
+			remoteInfo = IsolationOSAllocatedUnfairLock;
+		};
+		602E72842FCCC7DE0011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609020452FAE1B42008D0ECD;
+			remoteInfo = Isolation;
+		};
+		602E72892FCCC7DE0011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 602E72772FCCC7DE0011373C;
+			remoteInfo = IsolationOSAllocatedUnfairLock;
+		};
 		6090205D2FAE1B43008D0ECD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
@@ -104,6 +128,7 @@
 				602E72682FCCC63E0011373C /* IsolationNSLock.framework in Embed Frameworks */,
 				601E1F5D2FC34DD0007EFC26 /* IndirectInstantiation.framework in Embed Frameworks */,
 				601E1F2F2FC21721007EFC26 /* PFDependencyInjection.framework in Embed Frameworks */,
+				602E728C2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +142,8 @@
 		601E1F512FC34DD0007EFC26 /* IndirectInstantiationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndirectInstantiationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		602E72542FCCC63E0011373C /* IsolationNSLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IsolationNSLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		602E725C2FCCC63E0011373C /* IsolationNSLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsolationNSLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		602E72782FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IsolationOSAllocatedUnfairLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		602E72802FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsolationOSAllocatedUnfairLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		609020462FAE1B42008D0ECD /* Isolation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Isolation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6090205C2FAE1B43008D0ECD /* IsolationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsolationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -160,6 +187,16 @@
 		602E72622FCCC63E0011373C /* IsolationNSLockTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = IsolationNSLockTests;
+			sourceTree = "<group>";
+		};
+		602E72792FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IsolationOSAllocatedUnfairLock;
+			sourceTree = "<group>";
+		};
+		602E72862FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IsolationOSAllocatedUnfairLockTests;
 			sourceTree = "<group>";
 		};
 		609020482FAE1B42008D0ECD /* Isolation */ = {
@@ -231,6 +268,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		602E72752FCCC7DE0011373C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E727D2FCCC7DE0011373C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602E72812FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		609020432FAE1B42008D0ECD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,6 +290,7 @@
 				602E72672FCCC63E0011373C /* IsolationNSLock.framework in Frameworks */,
 				601E1F5C2FC34DD0007EFC26 /* IndirectInstantiation.framework in Frameworks */,
 				601E1F2E2FC21721007EFC26 /* PFDependencyInjection.framework in Frameworks */,
+				602E728B2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +316,8 @@
 				601E1F572FC34DD0007EFC26 /* IndirectInstantiationTests */,
 				602E72552FCCC63E0011373C /* IsolationNSLock */,
 				602E72622FCCC63E0011373C /* IsolationNSLockTests */,
+				602E72792FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock */,
+				602E72862FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests */,
 				609020472FAE1B42008D0ECD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -278,6 +333,8 @@
 				601E1F512FC34DD0007EFC26 /* IndirectInstantiationTests.xctest */,
 				602E72542FCCC63E0011373C /* IsolationNSLock.framework */,
 				602E725C2FCCC63E0011373C /* IsolationNSLockTests.xctest */,
+				602E72782FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework */,
+				602E72802FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -300,6 +357,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		602E724F2FCCC63E0011373C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72732FCCC7DE0011373C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,6 +517,53 @@
 			productReference = 602E725C2FCCC63E0011373C /* IsolationNSLockTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		602E72772FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602E728D2FCCC7DE0011373C /* Build configuration list for PBXNativeTarget "IsolationOSAllocatedUnfairLock" */;
+			buildPhases = (
+				602E72732FCCC7DE0011373C /* Headers */,
+				602E72742FCCC7DE0011373C /* Sources */,
+				602E72752FCCC7DE0011373C /* Frameworks */,
+				602E72762FCCC7DE0011373C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				602E72792FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock */,
+			);
+			name = IsolationOSAllocatedUnfairLock;
+			packageProductDependencies = (
+			);
+			productName = IsolationOSAllocatedUnfairLock;
+			productReference = 602E72782FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		602E727F2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602E72902FCCC7DE0011373C /* Build configuration list for PBXNativeTarget "IsolationOSAllocatedUnfairLockTests" */;
+			buildPhases = (
+				602E727C2FCCC7DE0011373C /* Sources */,
+				602E727D2FCCC7DE0011373C /* Frameworks */,
+				602E727E2FCCC7DE0011373C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				602E72832FCCC7DE0011373C /* PBXTargetDependency */,
+				602E72852FCCC7DE0011373C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				602E72862FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests */,
+			);
+			name = IsolationOSAllocatedUnfairLockTests;
+			packageProductDependencies = (
+			);
+			productName = IsolationOSAllocatedUnfairLockTests;
+			productReference = 602E72802FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		609020452FAE1B42008D0ECD /* Isolation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6090206F2FAE1B43008D0ECD /* Build configuration list for PBXNativeTarget "Isolation" */;
@@ -468,6 +579,7 @@
 				601E1F2D2FC21721007EFC26 /* PBXTargetDependency */,
 				601E1F5B2FC34DD0007EFC26 /* PBXTargetDependency */,
 				602E72662FCCC63E0011373C /* PBXTargetDependency */,
+				602E728A2FCCC7DE0011373C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				609020482FAE1B42008D0ECD /* Isolation */,
@@ -533,6 +645,13 @@
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = 609020452FAE1B42008D0ECD;
 					};
+					602E72772FCCC7DE0011373C = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					602E727F2FCCC7DE0011373C = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 609020452FAE1B42008D0ECD;
+					};
 					609020452FAE1B42008D0ECD = {
 						CreatedOnToolsVersion = 26.4;
 					};
@@ -567,6 +686,8 @@
 				601E1F502FC34DD0007EFC26 /* IndirectInstantiationTests */,
 				602E72532FCCC63E0011373C /* IsolationNSLock */,
 				602E725B2FCCC63E0011373C /* IsolationNSLockTests */,
+				602E72772FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock */,
+				602E727F2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests */,
 			);
 		};
 /* End PBXProject section */
@@ -608,6 +729,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		602E725A2FCCC63E0011373C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72762FCCC7DE0011373C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E727E2FCCC7DE0011373C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -667,6 +802,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		602E72582FCCC63E0011373C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72742FCCC7DE0011373C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E727C2FCCC7DE0011373C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -734,6 +883,21 @@
 			isa = PBXTargetDependency;
 			target = 602E72532FCCC63E0011373C /* IsolationNSLock */;
 			targetProxy = 602E72652FCCC63E0011373C /* PBXContainerItemProxy */;
+		};
+		602E72832FCCC7DE0011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 602E72772FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock */;
+			targetProxy = 602E72822FCCC7DE0011373C /* PBXContainerItemProxy */;
+		};
+		602E72852FCCC7DE0011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609020452FAE1B42008D0ECD /* Isolation */;
+			targetProxy = 602E72842FCCC7DE0011373C /* PBXContainerItemProxy */;
+		};
+		602E728A2FCCC7DE0011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 602E72772FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock */;
+			targetProxy = 602E72892FCCC7DE0011373C /* PBXContainerItemProxy */;
 		};
 		6090205E2FAE1B43008D0ECD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1143,6 +1307,126 @@
 			};
 			name = Release;
 		};
+		602E728E2FCCC7DE0011373C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationOSAllocatedUnfairLock;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		602E728F2FCCC7DE0011373C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationOSAllocatedUnfairLock;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		602E72912FCCC7DE0011373C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJ6MFU6M33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationOSAllocatedUnfairLockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Isolation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Isolation";
+			};
+			name = Debug;
+		};
+		602E72922FCCC7DE0011373C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJ6MFU6M33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationOSAllocatedUnfairLockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Isolation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Isolation";
+			};
+			name = Release;
+		};
 		609020702FAE1B43008D0ECD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1445,6 +1729,24 @@
 			buildConfigurations = (
 				602E726D2FCCC63E0011373C /* Debug */,
 				602E726E2FCCC63E0011373C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602E728D2FCCC7DE0011373C /* Build configuration list for PBXNativeTarget "IsolationOSAllocatedUnfairLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602E728E2FCCC7DE0011373C /* Debug */,
+				602E728F2FCCC7DE0011373C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602E72902FCCC7DE0011373C /* Build configuration list for PBXNativeTarget "IsolationOSAllocatedUnfairLockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602E72912FCCC7DE0011373C /* Debug */,
+				602E72922FCCC7DE0011373C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
