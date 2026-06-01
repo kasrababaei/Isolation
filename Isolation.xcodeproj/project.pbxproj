@@ -25,6 +25,12 @@
 		602E72A52FCCC8540011373C /* IsolationMutex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E729C2FCCC8530011373C /* IsolationMutex.framework */; };
 		602E72AF2FCCC8540011373C /* IsolationMutex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E729C2FCCC8530011373C /* IsolationMutex.framework */; };
 		602E72B02FCCC8540011373C /* IsolationMutex.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 602E729C2FCCC8530011373C /* IsolationMutex.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		602E72C92FCCC8E70011373C /* IsolationActor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72C02FCCC8E60011373C /* IsolationActor.framework */; };
+		602E72D32FCCC8E70011373C /* IsolationActor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72C02FCCC8E60011373C /* IsolationActor.framework */; };
+		602E72D42FCCC8E70011373C /* IsolationActor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72C02FCCC8E60011373C /* IsolationActor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		602E72ED2FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72E42FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework */; };
+		602E72F72FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72E42FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework */; };
+		602E72F82FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 602E72E42FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +139,48 @@
 			remoteGlobalIDString = 602E729B2FCCC8530011373C;
 			remoteInfo = IsolationMutex;
 		};
+		602E72CA2FCCC8E70011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 602E72BF2FCCC8E60011373C;
+			remoteInfo = IsolationActor;
+		};
+		602E72CC2FCCC8E70011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609020452FAE1B42008D0ECD;
+			remoteInfo = Isolation;
+		};
+		602E72D12FCCC8E70011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 602E72BF2FCCC8E60011373C;
+			remoteInfo = IsolationActor;
+		};
+		602E72EE2FCCC97A0011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 602E72E32FCCC97A0011373C;
+			remoteInfo = IsolationUnownedSerialExecutor;
+		};
+		602E72F02FCCC97A0011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 609020452FAE1B42008D0ECD;
+			remoteInfo = Isolation;
+		};
+		602E72F52FCCC97A0011373C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 602E72E32FCCC97A0011373C;
+			remoteInfo = IsolationUnownedSerialExecutor;
+		};
 		6090205D2FAE1B43008D0ECD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6090203E2FAE1B42008D0ECD /* Project object */;
@@ -153,7 +201,9 @@
 				601E1F5D2FC34DD0007EFC26 /* IndirectInstantiation.framework in Embed Frameworks */,
 				601E1F2F2FC21721007EFC26 /* PFDependencyInjection.framework in Embed Frameworks */,
 				602E728C2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework in Embed Frameworks */,
+				602E72F82FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework in Embed Frameworks */,
 				602E72B02FCCC8540011373C /* IsolationMutex.framework in Embed Frameworks */,
+				602E72D42FCCC8E70011373C /* IsolationActor.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +221,10 @@
 		602E72802FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsolationOSAllocatedUnfairLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		602E729C2FCCC8530011373C /* IsolationMutex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IsolationMutex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		602E72A42FCCC8540011373C /* IsolationMutexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsolationMutexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		602E72C02FCCC8E60011373C /* IsolationActor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IsolationActor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		602E72C82FCCC8E70011373C /* IsolationActorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsolationActorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		602E72E42FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IsolationUnownedSerialExecutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		602E72EC2FCCC97A0011373C /* IsolationUnownedSerialExecutorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsolationUnownedSerialExecutorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		609020462FAE1B42008D0ECD /* Isolation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Isolation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6090205C2FAE1B43008D0ECD /* IsolationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IsolationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -234,6 +288,26 @@
 		602E72AA2FCCC8540011373C /* IsolationMutexTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = IsolationMutexTests;
+			sourceTree = "<group>";
+		};
+		602E72C12FCCC8E60011373C /* IsolationActor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IsolationActor;
+			sourceTree = "<group>";
+		};
+		602E72CE2FCCC8E70011373C /* IsolationActorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IsolationActorTests;
+			sourceTree = "<group>";
+		};
+		602E72E52FCCC97A0011373C /* IsolationUnownedSerialExecutor */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IsolationUnownedSerialExecutor;
+			sourceTree = "<group>";
+		};
+		602E72F22FCCC97A0011373C /* IsolationUnownedSerialExecutorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = IsolationUnownedSerialExecutorTests;
 			sourceTree = "<group>";
 		};
 		609020482FAE1B42008D0ECD /* Isolation */ = {
@@ -335,6 +409,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		602E72BD2FCCC8E60011373C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72C52FCCC8E70011373C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602E72C92FCCC8E70011373C /* IsolationActor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72E12FCCC97A0011373C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72E92FCCC97A0011373C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602E72ED2FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		609020432FAE1B42008D0ECD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,7 +447,9 @@
 				601E1F5C2FC34DD0007EFC26 /* IndirectInstantiation.framework in Frameworks */,
 				601E1F2E2FC21721007EFC26 /* PFDependencyInjection.framework in Frameworks */,
 				602E728B2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLock.framework in Frameworks */,
+				602E72F72FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework in Frameworks */,
 				602E72AF2FCCC8540011373C /* IsolationMutex.framework in Frameworks */,
+				602E72D32FCCC8E70011373C /* IsolationActor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +479,10 @@
 				602E72862FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests */,
 				602E729D2FCCC8530011373C /* IsolationMutex */,
 				602E72AA2FCCC8540011373C /* IsolationMutexTests */,
+				602E72C12FCCC8E60011373C /* IsolationActor */,
+				602E72CE2FCCC8E70011373C /* IsolationActorTests */,
+				602E72E52FCCC97A0011373C /* IsolationUnownedSerialExecutor */,
+				602E72F22FCCC97A0011373C /* IsolationUnownedSerialExecutorTests */,
 				609020472FAE1B42008D0ECD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -392,6 +502,10 @@
 				602E72802FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests.xctest */,
 				602E729C2FCCC8530011373C /* IsolationMutex.framework */,
 				602E72A42FCCC8540011373C /* IsolationMutexTests.xctest */,
+				602E72C02FCCC8E60011373C /* IsolationActor.framework */,
+				602E72C82FCCC8E70011373C /* IsolationActorTests.xctest */,
+				602E72E42FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework */,
+				602E72EC2FCCC97A0011373C /* IsolationUnownedSerialExecutorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -428,6 +542,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		602E72972FCCC8530011373C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72BB2FCCC8E60011373C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72DF2FCCC97A0011373C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -675,6 +803,100 @@
 			productReference = 602E72A42FCCC8540011373C /* IsolationMutexTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		602E72BF2FCCC8E60011373C /* IsolationActor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602E72D52FCCC8E70011373C /* Build configuration list for PBXNativeTarget "IsolationActor" */;
+			buildPhases = (
+				602E72BB2FCCC8E60011373C /* Headers */,
+				602E72BC2FCCC8E60011373C /* Sources */,
+				602E72BD2FCCC8E60011373C /* Frameworks */,
+				602E72BE2FCCC8E60011373C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				602E72C12FCCC8E60011373C /* IsolationActor */,
+			);
+			name = IsolationActor;
+			packageProductDependencies = (
+			);
+			productName = IsolationActor;
+			productReference = 602E72C02FCCC8E60011373C /* IsolationActor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		602E72C72FCCC8E70011373C /* IsolationActorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602E72D82FCCC8E70011373C /* Build configuration list for PBXNativeTarget "IsolationActorTests" */;
+			buildPhases = (
+				602E72C42FCCC8E70011373C /* Sources */,
+				602E72C52FCCC8E70011373C /* Frameworks */,
+				602E72C62FCCC8E70011373C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				602E72CB2FCCC8E70011373C /* PBXTargetDependency */,
+				602E72CD2FCCC8E70011373C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				602E72CE2FCCC8E70011373C /* IsolationActorTests */,
+			);
+			name = IsolationActorTests;
+			packageProductDependencies = (
+			);
+			productName = IsolationActorTests;
+			productReference = 602E72C82FCCC8E70011373C /* IsolationActorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		602E72E32FCCC97A0011373C /* IsolationUnownedSerialExecutor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602E72F92FCCC97A0011373C /* Build configuration list for PBXNativeTarget "IsolationUnownedSerialExecutor" */;
+			buildPhases = (
+				602E72DF2FCCC97A0011373C /* Headers */,
+				602E72E02FCCC97A0011373C /* Sources */,
+				602E72E12FCCC97A0011373C /* Frameworks */,
+				602E72E22FCCC97A0011373C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				602E72E52FCCC97A0011373C /* IsolationUnownedSerialExecutor */,
+			);
+			name = IsolationUnownedSerialExecutor;
+			packageProductDependencies = (
+			);
+			productName = IsolationUnownedSerialExecutor;
+			productReference = 602E72E42FCCC97A0011373C /* IsolationUnownedSerialExecutor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		602E72EB2FCCC97A0011373C /* IsolationUnownedSerialExecutorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602E72FC2FCCC97A0011373C /* Build configuration list for PBXNativeTarget "IsolationUnownedSerialExecutorTests" */;
+			buildPhases = (
+				602E72E82FCCC97A0011373C /* Sources */,
+				602E72E92FCCC97A0011373C /* Frameworks */,
+				602E72EA2FCCC97A0011373C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				602E72EF2FCCC97A0011373C /* PBXTargetDependency */,
+				602E72F12FCCC97A0011373C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				602E72F22FCCC97A0011373C /* IsolationUnownedSerialExecutorTests */,
+			);
+			name = IsolationUnownedSerialExecutorTests;
+			packageProductDependencies = (
+			);
+			productName = IsolationUnownedSerialExecutorTests;
+			productReference = 602E72EC2FCCC97A0011373C /* IsolationUnownedSerialExecutorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		609020452FAE1B42008D0ECD /* Isolation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6090206F2FAE1B43008D0ECD /* Build configuration list for PBXNativeTarget "Isolation" */;
@@ -692,6 +914,8 @@
 				602E72662FCCC63E0011373C /* PBXTargetDependency */,
 				602E728A2FCCC7DE0011373C /* PBXTargetDependency */,
 				602E72AE2FCCC8540011373C /* PBXTargetDependency */,
+				602E72D22FCCC8E70011373C /* PBXTargetDependency */,
+				602E72F62FCCC97A0011373C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				609020482FAE1B42008D0ECD /* Isolation */,
@@ -771,6 +995,20 @@
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = 609020452FAE1B42008D0ECD;
 					};
+					602E72BF2FCCC8E60011373C = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					602E72C72FCCC8E70011373C = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 609020452FAE1B42008D0ECD;
+					};
+					602E72E32FCCC97A0011373C = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					602E72EB2FCCC97A0011373C = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 609020452FAE1B42008D0ECD;
+					};
 					609020452FAE1B42008D0ECD = {
 						CreatedOnToolsVersion = 26.4;
 					};
@@ -809,6 +1047,10 @@
 				602E727F2FCCC7DE0011373C /* IsolationOSAllocatedUnfairLockTests */,
 				602E729B2FCCC8530011373C /* IsolationMutex */,
 				602E72A32FCCC8540011373C /* IsolationMutexTests */,
+				602E72BF2FCCC8E60011373C /* IsolationActor */,
+				602E72C72FCCC8E70011373C /* IsolationActorTests */,
+				602E72E32FCCC97A0011373C /* IsolationUnownedSerialExecutor */,
+				602E72EB2FCCC97A0011373C /* IsolationUnownedSerialExecutorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -878,6 +1120,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		602E72A22FCCC8540011373C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72BE2FCCC8E60011373C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72C62FCCC8E70011373C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72E22FCCC97A0011373C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72EA2FCCC97A0011373C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -965,6 +1235,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		602E72A02FCCC8540011373C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72BC2FCCC8E60011373C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72C42FCCC8E70011373C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72E02FCCC97A0011373C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602E72E82FCCC97A0011373C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1062,6 +1360,36 @@
 			isa = PBXTargetDependency;
 			target = 602E729B2FCCC8530011373C /* IsolationMutex */;
 			targetProxy = 602E72AD2FCCC8540011373C /* PBXContainerItemProxy */;
+		};
+		602E72CB2FCCC8E70011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 602E72BF2FCCC8E60011373C /* IsolationActor */;
+			targetProxy = 602E72CA2FCCC8E70011373C /* PBXContainerItemProxy */;
+		};
+		602E72CD2FCCC8E70011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609020452FAE1B42008D0ECD /* Isolation */;
+			targetProxy = 602E72CC2FCCC8E70011373C /* PBXContainerItemProxy */;
+		};
+		602E72D22FCCC8E70011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 602E72BF2FCCC8E60011373C /* IsolationActor */;
+			targetProxy = 602E72D12FCCC8E70011373C /* PBXContainerItemProxy */;
+		};
+		602E72EF2FCCC97A0011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 602E72E32FCCC97A0011373C /* IsolationUnownedSerialExecutor */;
+			targetProxy = 602E72EE2FCCC97A0011373C /* PBXContainerItemProxy */;
+		};
+		602E72F12FCCC97A0011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 609020452FAE1B42008D0ECD /* Isolation */;
+			targetProxy = 602E72F02FCCC97A0011373C /* PBXContainerItemProxy */;
+		};
+		602E72F62FCCC97A0011373C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 602E72E32FCCC97A0011373C /* IsolationUnownedSerialExecutor */;
+			targetProxy = 602E72F52FCCC97A0011373C /* PBXContainerItemProxy */;
 		};
 		6090205E2FAE1B43008D0ECD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1711,6 +2039,246 @@
 			};
 			name = Release;
 		};
+		602E72D62FCCC8E70011373C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationActor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		602E72D72FCCC8E70011373C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationActor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		602E72D92FCCC8E70011373C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJ6MFU6M33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationActorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Isolation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Isolation";
+			};
+			name = Debug;
+		};
+		602E72DA2FCCC8E70011373C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJ6MFU6M33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationActorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Isolation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Isolation";
+			};
+			name = Release;
+		};
+		602E72FA2FCCC97A0011373C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationUnownedSerialExecutor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		602E72FB2FCCC97A0011373C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationUnownedSerialExecutor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_MODULE = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		602E72FD2FCCC97A0011373C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJ6MFU6M33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationUnownedSerialExecutorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Isolation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Isolation";
+			};
+			name = Debug;
+		};
+		602E72FE2FCCC97A0011373C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJ6MFU6M33;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasrababaei.IsolationUnownedSerialExecutorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Isolation.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Isolation";
+			};
+			name = Release;
+		};
 		609020702FAE1B43008D0ECD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2049,6 +2617,42 @@
 			buildConfigurations = (
 				602E72B52FCCC8540011373C /* Debug */,
 				602E72B62FCCC8540011373C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602E72D52FCCC8E70011373C /* Build configuration list for PBXNativeTarget "IsolationActor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602E72D62FCCC8E70011373C /* Debug */,
+				602E72D72FCCC8E70011373C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602E72D82FCCC8E70011373C /* Build configuration list for PBXNativeTarget "IsolationActorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602E72D92FCCC8E70011373C /* Debug */,
+				602E72DA2FCCC8E70011373C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602E72F92FCCC97A0011373C /* Build configuration list for PBXNativeTarget "IsolationUnownedSerialExecutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602E72FA2FCCC97A0011373C /* Debug */,
+				602E72FB2FCCC97A0011373C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602E72FC2FCCC97A0011373C /* Build configuration list for PBXNativeTarget "IsolationUnownedSerialExecutorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602E72FD2FCCC97A0011373C /* Debug */,
+				602E72FE2FCCC97A0011373C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
